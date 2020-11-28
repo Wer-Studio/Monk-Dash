@@ -19,8 +19,8 @@ public class PolearmController : MonoBehaviour
     void Update()
     {
         Vector2 targetVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        //polearmJoint.linearOffset = targetVector = targetVector.normalized* maxDistance;
         //Debug.Log(targetVector);
-        Vector2.ClampMagnitude(targetVector, maxDistance);
         polearmJoint.linearOffset = Vector2.ClampMagnitude(targetVector, maxDistance);
         float targetAngle = Vector2.SignedAngle(Vector2.right, targetVector);
         if (targetAngle < 0) targetAngle += 360;
