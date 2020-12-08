@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 
-public class DamageController : MonoBehaviour
+public class DamageControllerDemo : MonoBehaviour
 {
 
     public float impactCoefficient = 1f;

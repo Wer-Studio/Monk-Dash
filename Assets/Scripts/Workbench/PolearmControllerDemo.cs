@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PolearmController : MonoBehaviour
+public class PolearmControllerDemo : MonoBehaviour
 {
 
     public RelativeJoint2D polearmJoint;
+    public Collider2D polearmCollider;
+
+    public GameObject mouseObject;
 
     public float maxDistance = 2;
     
     // Start is called before the first frame update
     void Start()
     {
-
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), polearmCollider, true);
     }
 
     // Update is called once per frame

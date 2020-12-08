@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseController : MonoBehaviour
+public class MouseControllerDemo : MonoBehaviour
 {
 
     public float mouseSensitivity = 1f;

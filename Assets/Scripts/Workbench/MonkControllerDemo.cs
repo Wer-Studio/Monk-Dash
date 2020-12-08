@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonkController : MonoBehaviour
+public class MonkControllerDemo : MonoBehaviour
 {
     [SerializeField]
     private float health;
