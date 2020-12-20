@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 
 public class PolearmController : MonoBehaviour
@@ -87,7 +85,7 @@ public class PolearmController : MonoBehaviour
         //Slighty transform cosine to aid in rotation.
         
 
-        //Calculate rotation movment
+        //Calculate rotation movement
         float r = (armSliderJoint.jointTranslation + maxArmLength) / maxArmLength;
         float rotationRadius = Mathf.Lerp(minRotationRadius, maxRotationRadius, r);
         float rotationDelta = deltaC.x / rotationRadius;
