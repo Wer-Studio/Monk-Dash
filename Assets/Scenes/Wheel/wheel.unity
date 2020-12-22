@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &237297936
 Rigidbody2D:
   serializedVersion: 4
@@ -838,7 +838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1275571859
 Rigidbody2D:
   serializedVersion: 4
@@ -1046,13 +1046,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7ab366fdda4ed7409b3ac30f61910d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  legHingeJoint: {fileID: 564251373}
+  legHingeJoint: {fileID: 1635413433}
   legSliderJoint: {fileID: 1635413432}
-  maxExtensionForce: 1000
-  jumpSpeed: 1000
-  extensionSpeed: 100
-  uprightExtensionSelector: 0.5
-  hSpeed: 0
+  maxExtensionForce: 2000
+  extensionJumpSpeed: 10000
+  extensionMoveSpeed: 2
+  restingExtensionSelector: 0.5
+  maxTranslationForce: 1000
+  translationMoveSpeed: 5
 --- !u!50 &1515935632
 Rigidbody2D:
   serializedVersion: 4
@@ -1065,9 +1066,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 50
+  m_Mass: 20
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 1
@@ -1270,8 +1271,8 @@ SliderJoint2D:
   m_Angle: 90
   m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 1000
-    m_MaximumMotorForce: 10000
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 0
   m_UseLimits: 1
   m_TranslationLimits:
     m_LowerTranslation: 0
@@ -1295,11 +1296,11 @@ HingeJoint2D:
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
+    m_MaximumMotorForce: 1000
   m_UseLimits: 0
   m_AngleLimits:
     m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_UpperAngle: 0
 --- !u!50 &1635413434
 Rigidbody2D:
   serializedVersion: 4
@@ -1312,10 +1313,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -1490,10 +1491,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -1529,7 +1530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1834116473
 Rigidbody2D:
   serializedVersion: 4
@@ -1672,7 +1673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1882936541
 Rigidbody2D:
   serializedVersion: 4
