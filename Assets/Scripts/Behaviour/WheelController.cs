@@ -6,6 +6,7 @@ public class WheelController : MonoBehaviour
     [Header("Required Components")]
     public HingeJoint2D legHingeJoint;
     public SliderJoint2D legSliderJoint;
+    public Collider2D legsCollider;
 
     [Header("Vertical Movement")]
     public float maxExtensionForce;
@@ -32,7 +33,7 @@ public class WheelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), legsCollider);
     }
 
     void FixedUpdate()

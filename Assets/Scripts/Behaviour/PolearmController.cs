@@ -8,6 +8,7 @@ public class PolearmController : MonoBehaviour
     public HingeJoint2D armHingeJoint;
     public SliderJoint2D armSliderJoint;
     public Collider2D polearmCollider;
+    public Collider2D feetCollider;
 
     [Header("Mouse Settings")]
     public float sensitivity = 10f;
@@ -42,6 +43,7 @@ public class PolearmController : MonoBehaviour
         armHingeJoint.motor = armHinge;
         armSliderJoint.motor = armSlider;
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), polearmCollider);
+        Physics2D.IgnoreCollision(polearmCollider, feetCollider);
     }
 
     // Update is called once per frame
