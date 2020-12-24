@@ -105,7 +105,6 @@ public class PolearmController : MonoBehaviour
         armSlider.motorSpeed = extensionDelta;
         armSlider.maxMotorTorque = Mathf.Lerp(minLinearForce, maxLinearForce, mDelta.magnitude);
         armSliderJoint.motor = armSlider;
-        Debug.Log((mDelta.magnitude/armSpeed).ToString("F2"));
     }
 
     private void MoveArmHinge(Vector2 mDelta) {

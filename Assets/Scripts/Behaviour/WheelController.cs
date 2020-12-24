@@ -64,7 +64,6 @@ public class WheelController : MonoBehaviour
 
     private void MoveLegHinge(float translationVelocity)
     {
-        Debug.Log("Translation: " + translationVelocity);
         legHinge.maxMotorTorque = maxTranslationForce;
         legHinge.motorSpeed = - Mathf.Rad2Deg * translationVelocity;
         legHingeJoint.motor = legHinge;
